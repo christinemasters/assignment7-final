@@ -1,0 +1,24 @@
+<div>
+  <form>
+    <div>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" [(ngModel)]="todo.text" />
+    </div>
+    <div>
+      <label for="Description">Description</label>
+      <input
+        type="text"
+        id="description"
+        name="description"
+        [(ngModel)]="todo.description"
+      />
+    </div>
+    <div>
+      <label for="done">Done</label>
+      <input type="checkbox" id="done" name="done" [(ngModel)]="todo.done" />
+    </div>
+    <div>
+      <button type="submit" (click)="createTodo()">Create</button>
+    </div>
+  </form>
+</div>

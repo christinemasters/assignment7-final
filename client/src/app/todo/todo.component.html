@@ -1,0 +1,8 @@
+<div class="card-body">
+  <p class="todo-title">
+    <input type="checkbox" [checked]="todo.done" (change)="onToggleDone()" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span (click)="showDetails(todo._id)">{{ todo.text }}</span>
+    <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+  </p>
+</div>

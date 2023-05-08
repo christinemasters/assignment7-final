@@ -1,0 +1,9 @@
+<div class="container">
+  <div>
+    <app-todo-create />
+  </div>
+  <div>
+    <app-todo *ngFor="let todoObject of todoList" [todo]="todoObject">
+    </app-todo>
+  </div>
+</div>
